@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+body{
+  padding: 0;
+  margin: 0;
+ 
+  box-sizing: border-box;
+  font-family:Helvetica, sans-serif;
+}
+header{
+  background-color: #fff;
+  padding: 5px 24px;
+  max-width: 100%;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.dribble{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+.dribble h2{
+  font-family: "Montserrat", sans-serif;
+}
+.dribble ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  color: #6E6D7A;
+}
+@media  (max-width: 600px) {
+  .dribble ul{
+    display: none;
+  }
+  
+}
+.sign{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #6E6D7A;
+  font-size: 16px;
+  
+}
+.sign button{
+  background-color: #EA4C89;
+  padding: 12px 16px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+}
+.fa{
+  margin-top: 10px;
+  font-size: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.container{
+  min-height: 500px;
+   background-image: url("https://plus.unsplash.com/premium_photo-1673448760651-7e1e6fd79e40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;  
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://plus.unsplash.com/premium_photo-1673448760651-7e1e6fd79e40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.ani, .land{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.ani li {
+  background-color: #121212a1;
+  padding: 16px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease; /* Add transition property */
+}
+
+.ani li:hover, .land li:hover {
+  background-color: #121212; /* Slightly darker or different hover color */
+  border: 1px solid white;
+}
+.ma{
+  background-color: white;
+  color: black;
+  padding: 16px 20px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.container h2{
+  max-width: 400px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+.lorem{
+  width: 40%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.input{
+  background-color: white;
+  width: 40%;
+  padding: 20px;
+  border-radius: 50px;
+  color: #6E6D7A;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.input input{
+  border: none;
+  width: 100%;
+  outline: none;
+  margin-left: 5px;
+}
+.land li{
+   border: 1px solid white;
+   background-color: #0909091d;
+   padding: 5px 20px;
+   border-radius: 20px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, border 0.3s ease; /* Add transition property */
+
+
+}
+.top{
+  max-width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+select{
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 5px 8px;
+  color: #6E6D7A;
+  border: 1px solid #6E6D7A;
+  outline: none;
+  cursor: pointer;
+}
+.fill button{
+  padding: 5px 8px;
+  background-color: white;
+}
+.fill span{
+  margin-left: 5px;
+}
+
+
+.main{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 30px;
+}
+.card{
+  box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+.card:hover {
+  transform: scale(1.05); /* Increase the scale by 5% on hover */
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3); /* Slightly increase shadow on hover */
+}
+.card .mainimg{
+  margin-top: 10px;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  max-height: 120px;
+}
+.thumb{
+  width: 25px;
+  border-radius: 100%;
+  padding-right: 2px;
+}
+.des{
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin:  0px 4px;
+  
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+ 
+}
+.love{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 4px;
+}
+.brand{
+  margin-right: 13px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  font-size: 12px;
+  width: 100%;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pro{
+  background-color: #a5a4b4; /* Example background color */
+  color: rgb(250, 248, 248);
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  margin-left: 4px;
+  font-weight: bold;
+}
+.eye{
+  color: #a5a4b4;
+}
+.cardFotter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  margin-top: 50px;
+}
+.signUp{
+  background-color: #EA4C89;
+  padding: 10px 60px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.signIn{
+  cursor: pointer;
+}
+.footer{
+  padding: 30px;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #434345;
+  display: flex;
+  justify-content: center;
+}
+.social{
+  display: flex;
+  font-size: 16px;
+  gap: 10px;
+}
+.go{
+  display: flex;
+  justify-content: flex-end;
+  font-family: helvetica;
+  text-transform: capitalize;
+}
+@media(max-width:600px){
+  .go{
+    display: none;
+  }
+}
+.go div{
+  margin-left: 50px;
+  font-size: 14px;
+}
+.grow{
+  width: 200px;
+}
+
+
+
+.logo{
+  font-family: "Allura", cursive;
+  font-size: 36px;
+  color: #EA4C89;
+  font-weight: bold;
+}
