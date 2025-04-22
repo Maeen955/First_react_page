@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
-import Navbar from './Navbar';
-import Body from './Body';
-import Footer from './Footer';
+import Header from './Components/Header';
+import Slider from './Components/Slider';
+import ProductionHouse from './Components/ProductionHouse';
+import GenreMovieList from './Components/GenreMovieList';
+
 
 
 const App = () => {
+
+
   return (
-    <>
-    <Navbar/>
-    <Body/>
-    <Footer/>
-    </>
+   <div className='text-white'>
+    <Header/>
+
+    <Slider/>
+
+    <ProductionHouse/>
+
+    <GenreMovieList/>
+   </div>
   )
 }
 
